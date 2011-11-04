@@ -1,3 +1,9 @@
+# revision 20467
+# category Package
+# catalog-ctan /macros/luatex/latex/luasseq
+# catalog-date 2010-11-14 10:49:57 +0100
+# catalog-license lppl
+# catalog-version 2.1
 Name:		texlive-luasseq
 Version:	2.1
 Release:	1
@@ -43,6 +49,7 @@ faster than the original; it also offers several enhancements.
 #- source
 %doc %{_texmfdistdir}/source/lualatex/luasseq/luasseq.dtx
 %doc %{_texmfdistdir}/source/lualatex/luasseq/luasseq.ins
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -53,3 +60,5 @@ faster than the original; it also offers several enhancements.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar scripts tex doc source %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
