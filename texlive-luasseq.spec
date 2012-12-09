@@ -50,3 +50,17 @@ faster than the original; it also offers several enhancements.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar scripts tex doc source %{buildroot}%{_texmfdistdir}
+
+
+%changelog
+* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 2.1-2
++ Revision: 753590
+- Rebuild to reduce used resources
+
+* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 2.1-1
++ Revision: 718929
+- texlive-luasseq
+- texlive-luasseq
+- texlive-luasseq
+- texlive-luasseq
+
