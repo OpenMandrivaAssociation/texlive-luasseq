@@ -1,12 +1,6 @@
-# revision 20467
-# category Package
-# catalog-ctan /macros/luatex/latex/luasseq
-# catalog-date 2010-11-14 10:49:57 +0100
-# catalog-license lppl
-# catalog-version 2.1
 Name:		texlive-luasseq
-Version:	2.1
-Release:	10
+Version:	20150716
+Release:	1
 Summary:	Drawing spectral sequences in LuaLaTeX
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/luatex/latex/luasseq
@@ -34,12 +28,11 @@ faster than the original; it also offers several enhancements.
 
 #-----------------------------------------------------------------------
 %files
-%{_texmfdistdir}/scripts/luasseq/luasseq.lua
-%{_texmfdistdir}/tex/lualatex/luasseq/luasseq.sty
-%doc %{_texmfdistdir}/doc/lualatex/luasseq/luasseq.pdf
+%{_texmfdistdir}/scripts/luasseq
+%{_texmfdistdir}/tex/lualatex/luasseq
+%doc %{_texmfdistdir}/doc/lualatex/luasseq
 #- source
-%doc %{_texmfdistdir}/source/lualatex/luasseq/luasseq.dtx
-%doc %{_texmfdistdir}/source/lualatex/luasseq/luasseq.ins
+%doc %{_texmfdistdir}/source/lualatex/luasseq
 
 #-----------------------------------------------------------------------
 %prep
@@ -50,17 +43,3 @@ faster than the original; it also offers several enhancements.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar scripts tex doc source %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 2.1-2
-+ Revision: 753590
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 2.1-1
-+ Revision: 718929
-- texlive-luasseq
-- texlive-luasseq
-- texlive-luasseq
-- texlive-luasseq
-
