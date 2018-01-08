@@ -1,5 +1,5 @@
 Name:		texlive-luasseq
-Version:	20150716
+Version:	20170414
 Release:	1
 Summary:	Drawing spectral sequences in LuaLaTeX
 Group:		Publishing
