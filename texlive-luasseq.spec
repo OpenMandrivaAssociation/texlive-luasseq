@@ -1,6 +1,6 @@
 Name:		texlive-luasseq
 Version:	20180303
-Release:	1
+Release:	2
 Summary:	Drawing spectral sequences in LuaLaTeX
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/luatex/latex/luasseq
