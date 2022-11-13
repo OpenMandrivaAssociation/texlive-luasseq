@@ -1,13 +1,13 @@
 Name:		texlive-luasseq
-Version:	20190228
+Version:	37877
 Release:	1
 Summary:	Drawing spectral sequences in LuaLaTeX
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/luatex/latex/luasseq
 License:	LPPL
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/luasseq.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/luasseq.doc.tar.xz
-Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/luasseq.source.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/luasseq.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/luasseq.doc.r%{version}.tar.xz
+Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/luasseq.source.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -19,12 +19,12 @@ with LuaLaTeX. This version uses less memory, and operates
 faster than the original; it also offers several enhancements.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -36,7 +36,8 @@ faster than the original; it also offers several enhancements.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1 -a2
+%setup -c -a1 -a2
+%autopatch -p1
 
 %build
 
