@@ -3,7 +3,7 @@ Version:	65511
 Release:	1
 Summary:	Drawing spectral sequences in LuaLaTeX
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/luatex/latex/luasseq
+URL:		https://www.ctan.org/tex-archive/macros/luatex/latex/luasseq
 License:	LPPL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/luasseq.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/luasseq.doc.r%{version}.tar.xz
